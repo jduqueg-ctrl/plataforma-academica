@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Académica Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Plataforma Académica Básica</h1>
+        <p>Ingeniería de Software III — Universidad INCCA de Colombia</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#notas">Notas</a>
+        <a href="#anuncios">Anuncios</a>
+    </nav>
+
+    <main class="contenido">
+
+        <section id="asignaturas" class="tarjeta">
+            <h2>Asignaturas inscritas</h2>
+            <ul>
+                <li>Ingeniería de Software III</li>
+                <li>Bases de Datos II</li>
+                <li>Redes de Computadores</li>
+                <li>Arquitectura de Software</li>
+            </ul>
+        </section>
+
+        <section id="notas" class="tarjeta">
+            <h2>Notas registradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Corte 1</th>
+                        <th>Corte 2</th>
+                        <th>Corte 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingeniería de Software III</td>
+                        <td>4.2</td>
+                        <td>4.5</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos II</td>
+                        <td>3.8</td>
+                        <td>4.0</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Redes de Computadores</td>
+                        <td>4.6</td>
+                        <td>4.1</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="anuncios" class="tarjeta">
+            <h2>Anuncios del docente</h2>
+            <p>Entrega del taller de Git y GitHub: semana 3.</p>
+            <button id="btn-anuncio">Ver mensaje</button>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Proyecto académico — Taller de control de versiones con Git y GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

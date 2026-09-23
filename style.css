@@ -1,0 +1,136 @@
+/* ==========================================================
+   Plataforma Académica Básica — Estilos base del proyecto
+   ========================================================== */
+
+:root {
+    --azul-oscuro: #123a6b;
+    --azul-claro: #2e86c1;
+    --gris-fondo: #f4f6f8;
+    --gris-borde: #d9dee3;
+    --texto: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--gris-fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: var(--azul-oscuro);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido */
+.contenido {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.tarjeta h2 {
+    color: var(--azul-oscuro);
+    font-size: 20px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--azul-claro);
+    padding-bottom: 6px;
+}
+
+.tarjeta ul {
+    margin-left: 20px;
+}
+
+/* Tabla de notas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid var(--gris-borde);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--azul-oscuro);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef3f8;
+}
+
+/* Botón y mensaje */
+button {
+    background-color: var(--azul-claro);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--azul-oscuro);
+}
+
+.mensaje {
+    margin-top: 12px;
+    font-style: italic;
+    color: var(--azul-oscuro);
+}
+
+/* Pie de página */
+.pie {
+    background-color: var(--azul-oscuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
